@@ -9,4 +9,4 @@
 
 ###Built with jquery###
 
-**Demo** is not available yet
+**Demo** available here: [https://libikk.github.io/YouTube-video-list/](https://libikk.github.io/YouTube-video-list/).
