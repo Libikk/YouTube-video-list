@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>YouTube video list</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container">
+            <h1 style="color:white; text-align:center">Your <i class="fa fa-youtube-play" aria-hidden="true" style="color:red;"></i> YouTube video list!</h1>
+            <div class="md-form">
+                <input  type="text" id="form1" class="form-control" onkeydown="onKeyDown(event)">
+                <label style ="color:white" for="form1" class=""><i class="fa fa-youtube" aria-hidden="true"></i> Paste URL or Id video to ADD</label>
+            </div>
+            <div class="md-form">
+                <input type="text" value= "" id="form2" class="form-control" onkeyup="filterFunction()">
+                <label style ="color:white" for="form2" class=""><i class="fa fa-search" aria-hidden="true"></i> Find your video</label>
+            </div>
+            <button class="plus10" onclick="extra10videos()">+10</button>
+            <div id="videoCounter">0</div>
+            <div class="perPage">Videos per page:
+            <button class="perPageButton" onclick="show(5)">5</button>
+            <button class="perPageButton" onclick="show(10)">10</button>
+            <button class="perPageButton" onclick="show(15)">15</button>
+            <button class="perPageButton" onclick="show(20)">20</button>
+            </div>
+            <div class = "pages">
+                <ul>
+
+                </ul>
+            </div>
+            <div style="clear:both"></div>
+
+            <ul style="list-style-type: none">
+                <li id="list">
+                </li>
+            </ul>
+
+        </div>
+        <!--Footer-->
+<footer class="page-footer grey center-on-small-only">
+    
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+    
+                <!--First column-->
+                <div class="col-md-6">
+                    <h5 class="title">YouTube video list Creator</h5>
+                    <p>Easy to use! Just copy and paste link or video id! When you come back next time, all videos will be saved. Tell your friends and family about it, let them enjoy it aswell!</p>
+                </div>
+                <!--/.First column-->
+    
+                <!--Second column-->
+                <div class="col-md-6">
+                    <h5 class="title"> Navigate </h5>
+                    <ul>
+                        <li><a href="#!">About Us</a></li>
+                        <li><a href="#!">Mobile Apps</a></li>
+                        <li><a href="#!">Contant us</a></li>
+                        <li><a href="#!">Help & Customer Service</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+            </div>
+        </div>
+        <!--/.Footer Links-->
+    
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2018 Copyright: <a href="#"> MarekInternationalExportGroup.co.uk </a>
+    
+            </div>
+        </div>
+        <!--/.Copyright-->
+    
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!--MY js source-->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
